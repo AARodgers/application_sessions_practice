@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 
     get '/posts' do
-        "You are logged in as #{session[:email]}"
+        "A list of publically available posts"
+        # "You are logged in as #{session[:email]}"
     end
 
 end

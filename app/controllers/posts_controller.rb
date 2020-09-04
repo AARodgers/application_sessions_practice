@@ -13,4 +13,12 @@ class PostsController < ApplicationController
           "a new post form" #rendering if they are
       end
     end
+
+    get '/posts/:id/edit' do
+      if !session[:email]
+          redirect '/login'
+      else
+          "a edit post form"
+      end
+    end
 end

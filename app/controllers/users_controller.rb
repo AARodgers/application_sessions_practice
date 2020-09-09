@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
-    get 'signup' do
-        erb :'users/new'
+    get '/signup' do
+        erb :'users/new.html'
     end
 
     post '/users' do
